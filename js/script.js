@@ -106,7 +106,7 @@ var calculateAge = ()=>{
   let birth_date = new Date('2003, 07, 13');
   let years,months,days, hours, minutes, seconds;
   setInterval(function(){
-    var current_date = new Date(2022, 09, 29);
+    var current_date = new Date();
     AGE = current_date.getYear() - birth_date.getYear();
     age_year.innerHTML = pad(AGE);
     age_months.innerHTML = pad(Math.abs(current_date.getMonth() - birth_date.getMonth()));
